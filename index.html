@@ -4,14 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Aryan Khatri</title>
+    <link rel="icon" href="./assets/logo-nav-icon.png" />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/mediaQueries.css" />
   </head>
   <body>
+    <div class="scroll-watcher"></div>
     <nav id="desktop-nav">
-      <div class="logo">Aryan Khatri</div>
+      <img src="./assets/logo-nav.png" alt="logo" class="logo" />
       <div>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
+          <li><a href="#experience">Tech Stack</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
@@ -27,7 +31,7 @@
         </div>
         <div class="menu-links">
           <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Teck Stack</a></li>
           <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
           <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </div>
@@ -40,7 +44,7 @@
       </div>
       <div class="section__text">
         <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Aryan Khari</h1>
+        <h1 class="title">Aryan Khatri</h1>
         <p class="section__text__p2">Software Engineer</p>
         <div class="btn-container">
           <button
@@ -49,8 +53,8 @@
           >
             Download Resume
           </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contact Info
+          <button class="btn btn-color-1">
+            <a href="mailto:aryankhatri.forwork@gmail.com">Send Mail</a>
           </button>
         </div>
         <div id="socials-container">
@@ -58,16 +62,213 @@
             src="./assets/logo-linkedin.svg"
             alt="My LinkedIn profile"
             class="icon"
-            onclick="location.href='https://linkedin.com/'"
+            onclick="window.open('https://www.linkedin.com/in/aryan-khatri-283b49229', '_blank')"
           />
           <img
             src="./assets/logo-github.svg"
             alt="My Github profile"
             class="icon"
-            onclick="location.href='https://github.com/'"
+            onclick="window.open('https://github.com/aryanDevAK', '_blank')"
           />
         </div>
       </div>
+    </section>
+
+    <section id="about">
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>
+                Bachelors of Computer Application,<br />Chandigarh University
+              </p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Certification</h3>
+              <p>2+ years | Android Development</p>
+              <button
+                class="box-btn"
+                onclick="window.open('https://drive.google.com/file/d/1_Xl2D-YAw-LMAHGQYtM7B637UCGHWIzQ/view?usp=drive_link','-_blank')"
+              >
+                Certification
+              </button>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Certification</h3>
+              <p>1+ years | Software Development</p>
+              <button
+                class="box-btn"
+                onclick="window.open('https://drive.google.com/file/d/1wooyBciOslnFU97cR3ZsQciO96mLiVzB/view?usp=drive_link','_blank')"
+              >
+                Certification
+              </button>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              As an innovative <em>Software Engineer</em> and seasoned
+              <em>Android Developer</em>, I've delivered successful outcomes for
+              over 20+ applications, with 10+ published on Google Playstore.
+              Proficient in Python and Java, I've crafted 5 platform-independent
+              solutions. Open to collaboration and project opportunities, feel
+              free to contact me for further discussion or project inquiries via
+              email.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Tech Stack</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML | CSS | JavaScript | React JS</h3>
+                  <p>Well - Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Pyhton QT</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>XML | Jetpack Compose | React Native</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Backend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Express JS | Node JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Java | Kotlin</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Database Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>MongoDB</h3>
+                  <p>Well Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>MySQL | SQL</h3>
+                  <p>Well Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Firebase</h3>
+                  <p>Well Experienced</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
     </section>
   </body>
 </html>
