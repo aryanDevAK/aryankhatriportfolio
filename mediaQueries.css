@@ -87,8 +87,8 @@
     text-align: center;
   }
   .section__pic-container {
-    width: auto;
-    height: 46vw;
+    width: 275px;
+    height: 275px;
     justify-content: center;
   }
   .section__text__p2 {
