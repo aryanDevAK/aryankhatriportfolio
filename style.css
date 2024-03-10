@@ -8,7 +8,7 @@
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "poppins", "Roboto", "Arial", "Vedanta";
 }
 
 html {
@@ -352,6 +352,16 @@ section {
 }
 .text-container p {
   text-align: justify;
+}
+.section__text__p2::after {
+  content: "|"; /* Blinking cursor */
+  animation: blink 2s infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
 }
 
 /* EXPERIENCE SECTION */
