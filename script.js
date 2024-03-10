@@ -6,7 +6,7 @@ function toggleMenu() {
   }
   
 
-const texts = ["Ecosystems & Systems Engineer", "Software Engineer", "Android Developer", "UI/UX Designer"];
+const texts = ["Ecosystem Engineer", "Software Engineer", "Android Developer", "UI/UX Designer"];
 let index = 0;
 let text = "";
 let isTyping = true;
