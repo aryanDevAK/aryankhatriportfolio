@@ -113,11 +113,23 @@
     overflow: hidden;
   }
   .project-image {
-    width: 100%;
+    width: auto;
     height: 200px;
     overflow: hidden;
     margin: 5px;
     border-radius: 20px;
+    border: 1px solid rgb(53, 53, 53);
     object-fit: contain;
+  }
+  .project-info {
+    margin: 10px;
+    text-align: justify;
+    width: auto;
+    color: rgb(53, 53, 53);
+  }
+  .project-btns {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
   }
 }
