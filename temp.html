@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .image-container {
+        overflow: hidden;
+        width: 400px; /* Adjust the width and height as needed */
+        height: 300px;
+      }
+
+      .scroll-image {
+        width: 100%;
+        transition: transform 1s linear; /* Smooth transition for the scrolling effect */
+      }
+
+      .scroll-image:hover {
+        animation: scrollAnimation 5s linear infinite;
+      }
+
+      @keyframes scrollAnimation {
+        0% {
+          transform: translateY(0);
+        }
+        100% {
+          transform: translateY(-100%);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="image-container">
+      <img src="./assets/hims.png" alt="Image" class="scroll-image" />
+    </div>
+
+    <script>
+      const image = document.querySelector(".scroll-image");
+
+      image.addEventListener("mouseenter", () => {
+        image.style.animationPlayState = "running";
+      });
+
+      image.addEventListener("mouseleave", () => {
+        image.style.animationPlayState = "paused";
+      });
+    </script>
+  </body>
+</html>

@@ -18,7 +18,6 @@
           <li><a href="#experience">Tech Stack</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
-          <li><button id="dark-mode">Dark Mode</button></li>
         </ul>
       </div>
     </nav>
@@ -127,11 +126,12 @@
               As an innovative
               <em><b>Systems and Ecosystems Engineer</b></em> and seasoned
               <em><b>Android Developer</b></em
-              >, I've delivered successful outcomes for over 20+ applications,
-              with 10+ published on Google Playstore. Proficient in Python and
-              Java, I've crafted 5 platform-independent solutions. Open to
-              collaboration and project opportunities, feel free to contact me
-              for further discussion or project inquiries via email.
+              >, I've delivered successful outcomes for over
+              <b>20+ applications</b>, with
+              <b>10+ published on Google Playstore.</b> Proficient in Python and
+              Java, I've crafted <b>5 platform-independent solutions.</b>
+              Open to collaboration and project opportunities, feel free to
+              contact me for further discussion or project inquiries via email.
             </p>
           </div>
         </div>
@@ -140,10 +140,33 @@
         src="./assets/arrow.png"
         alt="Arrow icon"
         class="icon arrow"
-        onclick="location.href='./#experience'"
+        onclick="location.href='./#projects'"
       />
     </section>
 
+    <!-- Projects Section -->
+    <section id="projects">
+      <div class="container">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Projects</h1>
+        <div class="nav-pills">
+          <button id="first-btn" onclick="showProjects('first')">
+            Python Projects
+          </button>
+          <button id="second-btn" onclick="showProjects('second')">
+            Android Projects
+          </button>
+          <button id="third-btn" onclick="showProjects('third')">
+            UI/UX Designs
+          </button>
+        </div>
+        <div id="project-container" class="project-container">
+          <!-- Project cards will be dynamically inserted here -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Tech Stack Section -->
     <section id="experience">
       <p class="section__text__p1">Explore My</p>
       <h1 class="title">Tech Stack</h1>
@@ -169,7 +192,7 @@
                   class="icon"
                 />
                 <div>
-                  <h3>Pyhton QT</h3>
+                  <h3>PyQt5</h3>
                 </div>
               </article>
               <article>
@@ -260,30 +283,8 @@
         src="./assets/arrow.png"
         alt="Arrow icon"
         class="icon arrow"
-        onclick="location.href='./#projects'"
+        onclick="location.href='./#contact'"
       />
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects">
-      <div class="container">
-        <p class="section__text__p1">Explore My</p>
-        <h1 class="title">Projects</h1>
-        <div class="nav-pills">
-          <button id="first-btn" onclick="showProjects('first')">
-            Python Projects
-          </button>
-          <button id="second-btn" onclick="showProjects('second')">
-            Android Projects
-          </button>
-          <button id="third-btn" onclick="showProjects('third')">
-            UI/UX Designs
-          </button>
-        </div>
-        <div id="project-container" class="project-container">
-          <!-- Project cards will be dynamically inserted here -->
-        </div>
-      </div>
     </section>
 
     <!-- Contact Me Section -->

@@ -171,7 +171,7 @@ a:hover {
 section {
   padding-top: 4vh;
   height: 96vh;
-  margin: 0 10rem;
+  margin: 2rem 10rem;
   box-sizing: border-box;
   min-height: fit-content;
 }
@@ -367,6 +367,7 @@ section {
 /* EXPERIENCE SECTION */
 
 #experience {
+  margin-top: 10rem;
   position: relative;
 }
 
@@ -435,7 +436,8 @@ article .icon {
 #third-btn {
   border-radius: 0 50px 50px 0;
 }
-.nav-pills > button:hover {
+.nav-pills > button:hover,
+.nav-pills > button:focus {
   background: rgb(53, 53, 53);
   color: #fff;
   font-weight: bold;
@@ -454,14 +456,16 @@ article .icon {
   overflow: hidden;
   margin: 10px;
   border-radius: 50px;
+  object-fit: cover;
 }
 .project-image > img {
-  object-fit: none;
+  width: 100%;
 }
 .project-info {
   margin: 10px;
   /* background: green; */
   width: 100%;
+  color: rgb(53, 53, 53);
 }
 .project-info > h2 {
   text-align: center;
@@ -479,6 +483,21 @@ article .icon {
 #project-btn {
   width: 200px;
 }
+.scroll-image {
+  transition: transform 5s linear; /* Smooth transition for the scrolling effect */
+}
+.scroll-image:hover {
+  animation: scrollAnimation 5s linear infinite;
+}
+@keyframes scrollAnimation {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
 /* CONTACT */
 
 #contact {

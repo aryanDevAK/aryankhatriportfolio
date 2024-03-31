@@ -37,40 +37,41 @@ function erase() {
 }
 type();
 
-const darkModeButton = document.querySelector("#dark-mode");
+// Dark Mode Button
+// const darkModeButton = document.querySelector("#dark-mode");
 
-darkModeButton.addEventListener("click", () => { 
-  const body = document.querySelector(".main-body")
-  body.style.backgroundColor = "#000";
-  body.style.color = "#fff";
-});
+// darkModeButton.addEventListener("click", () => { 
+//   const body = document.querySelector(".main-body")
+//   body.style.backgroundColor = "#000";
+//   body.style.color = "#fff";
+// });
 
 // Projects
 const projects = [
   {
     title: "Hospital Management System",
-    description: "<b>Tech Stack</b><br><li>Python</li><li>React</li><li>MySQL</li><br>An Ecosystem for hospital that enables strategical decision making driven by AI and technique of OCR that enables hospitals to go paper free.<br><b>Strenghts</b><li>The HIMS is able to reduce the paper consumption by 80% within the hospitals.</li><li>The ecosystem is also efficient for small scale clinics and can be customised as per the requirements. Upto 70% effective.</li><li>Data of Hospitals, Lab Reports, Patients, Prescription can be synchorinzed in real time.</li><li>The Management system can be implemented for all the government hospitals around the country.</li>",
-    imgUrl: "./assets/project-1.png",
+    description: "<b>Tech Stack</b><br><p><li>Python</li><li>React</li><li>MySQL</li>An Ecosystem for hospital that enables strategical decision making driven by AI and technique of OCR that enables hospitals to go paper free.<br><b>Strenghts</b><li>The HIMS is able to reduce the paper consumption by 80% within the hospitals.</li><li>The ecosystem is also efficient for small scale clinics and can be customised as per the requirements. Upto 70% effective.</li><li>Data of Hospitals, Lab Reports, Patients, Prescription can be synchorinzed in real time.</li><li>The Management system can be implemented for all the government hospitals around the country.</li>",
+    imgUrl: "./assets/hims.png",
     gitHubLink: "",
-    liveDemoLink: "Under Development",
+    liveDemoLink: "https://youtu.be/IcyXhMlRoFU",
     btnContent:"Under Development",
     tab: "first",
   },
   {
     title: "Kerala Lottery  App",
-    description: "Description 2",
-    imgUrl: "./assets/education.png",
-    gitHubLink: "",
+    description: "<b>Tech Stack</b><li>Java | XML</li><li>Firebase</li><br>The Kerala Lottery App is an Android application delivered to the client, that is, a lottery firm.",
+    imgUrl: "./assets/kla.png",
+    gitHubLink: "https://github.com/aryanDevAK/Kerala_Lottery_App.git",
     liveDemoLink: "https://youtu.be/PYg21TJ9uyo",
     btnContent:"View Demo" ,
     tab: "second",
   },
   {
-    title: "My Designs",
-    description: "",
-    imgUrl: "./assets/education.png",
-    gitHubLink: "",
-    liveDemoLink: "https://youtu.be/PYg21TJ9uyo",
+    title: "Graphics & UI/UX Designs",
+    description: "<b>Tools I Use</b><br><li>Adobe Illustrator</li><li>Adobe Photoshop</li><li>Adobe Xd</li><br><p>I have an experience of 2 years in UI/UX Designing and Graphic Designing.<br>If you want to see the samples of my design you can refer below links.</p>",
+    imgUrl: "./assets/uiux.png",
+    gitHubLink: "https://drive.google.com/drive/folders/12YGa7pa6ZZ3iMQliNksOuDLY9z4cNGHj?usp=drive_link",
+    liveDemoLink: "https://odop-sih-fusionforce.netlify.app/main",
     btnContent:"View Graphic Designs",
     tab: "third",
   },
@@ -94,7 +95,7 @@ function showProjects(tab) {
     projectCard.innerHTML = `
     <div class="project-sub-container">
       <div class="project-image">
-        <img src="${project.imgUrl}" alt="Project Image">
+        <img src="${project.imgUrl}" alt="Project Image" class="scroll-image">
       </div>
       <div class="project-info">
         <h2>${project.title}</h2>
@@ -109,3 +110,14 @@ function showProjects(tab) {
     projectContainer.appendChild(projectCard);
   });
 }
+
+// Scrolling Project image
+const image = document.querySelector(".scroll-image");
+
+      image.addEventListener("mouseenter", () => {
+        image.style.animationPlayState = "running";
+      });
+
+      image.addEventListener("mouseleave", () => {
+        image.style.animationPlayState = "paused";
+      });
