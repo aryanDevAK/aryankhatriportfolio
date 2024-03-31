@@ -112,12 +112,27 @@ function showProjects(tab) {
 }
 
 // Scrolling Project image
-const image = document.querySelector(".scroll-image");
+const image = document.querySelector('.scroll-image');
+let isScrolling = false;
 
-      image.addEventListener("mouseenter", () => {
-        image.style.animationPlayState = "running";
-      });
+image.addEventListener('mouseenter', () => {
+  if (!isScrolling) {
+    isScrolling = true;
+    image.style.transitionDuration = '5s';
+    image.style.transform = 'translateY(-100%)';
+    image.addEventListener('transitionend', () => {
+      isScrolling = false;
+    }, { once: true });
+  }
+});
 
-      image.addEventListener("mouseleave", () => {
-        image.style.animationPlayState = "paused";
-      });
+image.addEventListener('mouseleave', () => {
+  if (!isScrolling) {
+    isScrolling = true;
+    image.style.transitionDuration = '1s';
+    image.style.transform = 'translateY(0)';
+    image.addEventListener('transitionend', () => {
+      isScrolling = false;
+    }, { once: true });
+  }
+});

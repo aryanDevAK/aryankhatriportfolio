@@ -100,4 +100,24 @@
   .text-container {
     text-align: justify;
   }
+
+  /* Project Section */
+
+  .project-container {
+    margin: 20px;
+  }
+  .project-sub-container {
+    display: block;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    overflow: hidden;
+  }
+  .project-image {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    margin: 5px;
+    border-radius: 20px;
+    object-fit: contain;
+  }
 }
