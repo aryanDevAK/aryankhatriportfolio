@@ -35,6 +35,12 @@ function erase() {
     setTimeout(erase, 100); // Erasing speed: 100 milliseconds
   }
 }
-
-// Start the typing animation
 type();
+
+const darkModeButton = document.querySelector("#dark-mode");
+
+darkModeButton.addEventListener("click", () => { 
+  const body = document.querySelector(".main-body")
+  body.style.backgroundColor = "#000";
+  body.style.color = "#fff";
+});

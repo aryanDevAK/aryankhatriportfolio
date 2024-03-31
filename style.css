@@ -407,24 +407,38 @@ article .icon {
 #projects {
   position: relative;
 }
-
-.color-container {
-  border-color: rgb(163, 163, 163);
-  background: rgb(250, 250, 250);
-}
-
-.proj-container {
-  text-align: center;
-}
-.head-container {
-  margin-top: 20px;
+.nav-pills {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-top: 20px;
+  background: transparent;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-radius: 50px;
 }
-.head-container > button {
-  font-size: 1.1rem;
-  padding: 5px 10px;
+.nav-pills button {
+  width: 33.33%;
+  background: transparent;
+  border: none;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+}
+#first-btn {
+  border-radius: 50px 0 0 50px;
+}
+#second-btn {
+  border-radius: 0;
+  border: 0 1px 0 1px solid #fff;
+}
+#third-btn {
+  border-radius: 0 50px 50px 0;
+}
+.nav-pills > button:hover {
+  background: rgb(53, 53, 53);
+  color: #fff;
+  font-weight: bold;
 }
 
 /* CONTACT */
