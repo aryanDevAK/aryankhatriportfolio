@@ -6,7 +6,7 @@ function toggleMenu() {
   }
   
 
-const texts = ["Ecosystem Engineer", "Software Engineer", "Android Developer", "UI/UX Designer"];
+const texts = ["Systems Engineer", "Software Engineer", "Android Developer", "UI/UX Designer"];
 let index = 0;
 let text = "";
 let isTyping = true;
@@ -49,8 +49,8 @@ type();
 // Projects
 const projects = [
   {
-    title: "Hospital Management System",
-    description: "<b>Tech Stack</b><br><p><li>Python</li><li>React</li><li>MySQL</li>An Ecosystem for hospital that enables strategical decision making driven by AI and technique of OCR that enables hospitals to go paper free.<br><b>Strenghts</b><li>The HIMS is able to reduce the paper consumption by 80% within the hospitals.</li><li>The ecosystem is also efficient for small scale clinics and can be customised as per the requirements. Upto 70% effective.</li><li>Data of Hospitals, Lab Reports, Patients, Prescription can be synchorinzed in real time.</li><li>The Management system can be implemented for all the government hospitals around the country.</li>",
+    title: "Medixify - AI for Healthcare",
+    description: "<b>Tech Stack</b><br><p><li>Python</li><li>React</li><li>MySQL</li>An Ecosystem for hospital that enables strategical decision making driven by AI and technique of OCR that enables hospitals to go paper free.<br><b>Strenghts</b><li>The software is able to reduce the paper consumption by 80% within the hospitals.</li><li>The ecosystem is also efficient for small scale clinics and can be customised as per the requirements. Upto 70% effective.</li><li>Data of Hospitals, Lab Reports, Patients, Prescription can be synchorinzed in real time.</li><li>The Management system can be implemented for all the government hospitals around the country.</li>",
     imgUrl: "./assets/hims.png",
     gitHubLink: "",
     liveDemoLink: "https://youtu.be/IcyXhMlRoFU",
